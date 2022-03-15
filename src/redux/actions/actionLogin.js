@@ -2,6 +2,7 @@ import { getAuth, signInWithPopup,signInWithEmailAndPassword } from "firebase/au
 import {facebook, google, db} from '../../firebase/firebaseConfig'
 import { loginTypes } from "../types/loginTypes";
 import { addDoc,collection,getDocs,query,where,doc,deleteDoc} from "@firebase/firestore";
+import { AddProductType } from "../types/AddProductType";
 // import { productTypes } from "../types/productTypes";
 
 export const loginEmailPassword = (email,password) =>{
@@ -85,29 +86,26 @@ export const logoutSincrono = () => {
     }
 }
 
-// Search
-// export const searchAsync = (producto) => {
-   
-//     return async (dispatch) => {
-//         const traerCollection = collection(db,'ProductosAmazonas')
-//         const q = query(traerCollection, where('nombre', '>=', producto, '<',  producto + 'z'))
-//         const datos = await getDocs(q)
+//Search
+export const searchAsync = (producto) => {
+    return async (dispatch) => {
+        const traerCollection = collection(db,'ProductosAmazonas')
+        const q = query(traerCollection, where('marca', '>=', producto, '<',  producto ))
+        const datos = await getDocs(q)
+        const productos = []
+        datos.forEach((documentos) => {
+            productos.push({
+                id: documentos.id,
+                data:documentos.data()
+            })
+        })
+        dispatch(searchSync(productos))
+    }
+}
 
-//         const productos = []
-//         datos.forEach((documentos) => {
-//             productos.push({
-//                 id: documentos.id,
-//                 data:documentos.data()
-//             })
-//             console.log('documentos.data()', documentos.data())
-//         })
-//         dispatch(searchSync(productos))
-//     }
-// }
-
-// export const searchSync = (productos) => {
-//     return {
-//         type: productTypes.search,
-//         payload: productos
-//     }
-// }
+export const searchSync = (productos) => {
+    return {
+        type: AddProductType.search,
+        payload: productos
+    }
+}

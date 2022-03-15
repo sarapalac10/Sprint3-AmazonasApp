@@ -1,3 +1,4 @@
 export const AddProductType = {
-    agregar: 'agregar'
+    agregar: 'agregar',
+    search: 'search'
 }
