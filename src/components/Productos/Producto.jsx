@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ContainerProductoGrid } from '../../style/Producto'
 import AgregarCarrito from './AgregarCarrito'
 import FotoPrincipal from './FotoPrincipal'
+import HistorialBusqueda from './HistorialBusqueda'
 import Miniaturas from './Miniaturas'
 import Opiniones from './Opiniones'
 import TituloYPrecio from './TituloYPrecio'
@@ -18,7 +19,9 @@ const Producto = ({producto}) => {
         <TituloYPrecio titulo={nombre} precio={precio} marca={marca} lente={lente} detalles={detalles} />
         <AgregarCarrito precio={precio} />
       </ContainerProductoGrid>
+      <HistorialBusqueda />
       <Opiniones />
+
     </>
   )
 }

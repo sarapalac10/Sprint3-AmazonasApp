@@ -7,7 +7,6 @@ export const ContainerProductoGrid = styled.div`
     grid-gap: 10px;
 `
 export const MiniaturasContainer =styled.div`
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,16 +14,12 @@ export const MiniaturasContainer =styled.div`
 `
 export const FotoPrincipalContainer = styled.div`
     margin: 0 5px 5px ;
-    border: 1px solid blue;
 `
 export const DescripcionContainer = styled.div`
-    border: 1px solid purple;
 `
 export const TituloYPrecioContainer =styled.div`
-    border: 1px solid green;
 `
 export const DescripcionProductoContainer =styled.div`
-    border: 1px solid purple;
 `
 export const BotonesCarritoContainer =styled.div`
     display: flex;
@@ -36,6 +31,7 @@ export const AgregarCarritoContainer = styled.div`
     height: fit-content;
     padding: 0.5rem;
     border-radius: 10px;
+    margin-right: 1rem;
 `
 export const OpinionesContainer = styled.div`
     display: flex;
@@ -48,5 +44,18 @@ export const UsuarioContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 20%
+    width: 20%;
+`
+export const HistorialBusquedaContainer = styled.div`
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:2rem;
+    margin-bottom:1rem;
+    margin-left: 2rem;
+`
+export const HistorialBusquedaContainerImagenes = styled.div`
+    display: flex;
+    margin-top:2rem;
 `

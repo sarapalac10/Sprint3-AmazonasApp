@@ -35,7 +35,7 @@ function App() {
   }, [])
   
   if(loading){
-    return <h1><RiShoppingCartFill /> Estamos trabajando ... <RiShoppingBasket2Fill /> </h1>
+    return <h1 className='texto-espera'><RiShoppingCartFill /> Estamos trabajando ... <RiShoppingBasket2Fill /> </h1>
   }
 
   return (
