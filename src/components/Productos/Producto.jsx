@@ -9,7 +9,7 @@ import Opiniones from './Opiniones'
 import TituloYPrecio from './TituloYPrecio'
 
 const Producto = ({producto}) => {
-    const {imagenes, nombre, precio, lente, detalles, comentarios, marca }= producto.data
+    const {imagenes, nombre, precio, lente, detalles, marca }= producto.data
   return (
     <>
       <Link to='/' className='link-atras'> &lt; Volver a los resultados </Link>
