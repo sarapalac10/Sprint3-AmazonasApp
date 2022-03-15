@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Sprint3-AmazonasApp/static/css/main.47f3c1a0.css",
+    "main.js": "/Sprint3-AmazonasApp/static/js/main.98b374d1.js",
+    "index.html": "/Sprint3-AmazonasApp/index.html",
+    "main.47f3c1a0.css.map": "/Sprint3-AmazonasApp/static/css/main.47f3c1a0.css.map",
+    "main.98b374d1.js.map": "/Sprint3-AmazonasApp/static/js/main.98b374d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47f3c1a0.css",
+    "static/js/main.98b374d1.js"
+  ]
+}
