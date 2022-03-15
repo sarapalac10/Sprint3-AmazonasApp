@@ -1,0 +1,94 @@
+:root{
+    --blue1: #131921;
+    --blue2: #242F3E;
+    --black: #333333;
+    --white: #FFFFFF;
+    --green: #0E7184;
+    --grey: #565959;
+    --red: #AF2913;
+    --yellowPrimary: #F3D184;
+    --yellowSecondary: #F0AD64;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Fuentes*/
+h1{ font-size: 33px}
+h2{ font-size: 22px}
+h3 {font-size: 15px; font-weight: bold;}
+h4{font-size: 12px;}    
+h5{font-size: 12px; margin-top: 5px; }    
+p{font-size: 14px;}
+button{font-size: 14px}
+
+/*Dropdown*/
+
+#dropdown-basic-button{
+    background-color: #F3F3F3;
+    font-size: 12px;
+    height: 35px;
+    margin-right: 0;
+}
+.drop-drown-cuenta{
+    margin-top: 0;
+    color: var(--white);
+    font-weight: bold;
+}
+.drop-drown-cuenta:hover{
+    color: var(--white);
+}
+
+.imagen-logo-header{
+    margin-top: 15px;
+}
+
+.link-atras{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.imagen-principal{
+    width: 491px;
+    height: 425px;
+    margin-top: 3rem;
+}
+
+.imagen-mini{
+    width: 35px;
+    height: 35px;
+    margin-top: 3rem;
+}
+
+.titulo-precio{
+    color: var(--black);
+    font-weight: bold;
+}
+
+.marca-producto{
+    color: var(--green);
+}
+.precio-producto{
+    color: var(--red);
+}
+
+.transaccion-producto{
+    color: var(--green);
+    text-align: center;
+}
+
+.info-comentarios{
+    color: var(--grey);
+}
+
+.productlist-title{
+    color: var(--black);
+    text-decoration: none;
+    height: 100px;
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+}
